@@ -1,6 +1,7 @@
 import streamlit as st				# Загрузка бибилотек
 import pandas as pd
 
+
 st.image("/home/iceman/PycharmProjects/PythonProject/titanik.png",
          caption="Титаник",
          use_container_width=True)
