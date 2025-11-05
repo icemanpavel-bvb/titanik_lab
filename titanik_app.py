@@ -1,6 +1,5 @@
-import streamlit as st				#Загрузка бибилотек
+import streamlit as st				# Загрузка бибилотек
 import pandas as pd
-import numpy as np
 
 st.image("/home/iceman/PycharmProjects/PythonProject/titanik.png",
          caption="Титаник",
