@@ -1,6 +1,7 @@
 import pandas as pd				# загрузка библиотек
 import numpy as np
 
+
 def test_fare_calculations():
     """Тест правильности расчетов стоимости билетов по статусу выживания"""
 
