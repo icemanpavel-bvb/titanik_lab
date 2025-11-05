@@ -40,6 +40,7 @@ def test_fare_calculations():
     assert avg_survived_fare == 60.0
     assert avg_dead_fare == 25.0
 
+
 def test_missing_values_handling():
     """Тест обработки пропущенных значений в стоимости билетов"""
 
@@ -77,6 +78,7 @@ def test_missing_values_handling():
     assert dead_sum == 0.0
     assert avg_survived_fare == 75.0
     assert avg_dead_fare == 0.0
+
 
 def test_edge_cases():
     """Тест граничных условий и edge-cases"""
