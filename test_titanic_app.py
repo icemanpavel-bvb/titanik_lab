@@ -1,7 +1,5 @@
-import pandas as pd				#загрузка библиотек
+import pandas as pd				# загрузка библиотек
 import numpy as np
-import pytest
-
 
 def test_fare_calculations():
     """Тест правильности расчетов стоимости билетов по статусу выживания"""
@@ -13,9 +11,7 @@ def test_fare_calculations():
     }
     df = pd.DataFrame(test_data)
 
-
     filtered_df = df[df['Embarked'] == 'S']
-
 
     survived_sum = 0
     survived_count = 0
@@ -42,7 +38,6 @@ def test_fare_calculations():
     assert dead_sum == 50.0
     assert avg_survived_fare == 60.0
     assert avg_dead_fare == 25.0
-
 
 def test_missing_values_handling():
     """Тест обработки пропущенных значений в стоимости билетов"""
@@ -75,14 +70,12 @@ def test_missing_values_handling():
     avg_survived_fare = survived_sum / survived_count if survived_count else 0
     avg_dead_fare = dead_sum / dead_count if dead_count else 0
 
-
     assert survived_count == 2
     assert dead_count == 0
     assert survived_sum == 150.0
     assert dead_sum == 0.0
     assert avg_survived_fare == 75.0
     assert avg_dead_fare == 0.0
-
 
 def test_edge_cases():
     """Тест граничных условий и edge-cases"""
